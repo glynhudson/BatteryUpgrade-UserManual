@@ -1,8 +1,9 @@
 # BatteryUpgrade-UserManual
-A guide for the BatteryUpgrade software, along with a list of all known defects in the conversion code
+A guide for the BatteryUpgrade software, along with a list of all known defects in the conversion code. The latest version of the BatteryUpgrade software is v2.36
 
 # Installation guide
 CAN-bridge installation video (ZE0) https://www.youtube.com/watch?v=-gLMUeE2mXo
+
 AZE0 battery into ZE0 example video https://www.youtube.com/watch?v=1Dwsk9lnr6I
 
 # Firmware update guide
