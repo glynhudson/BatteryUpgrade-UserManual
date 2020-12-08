@@ -1,5 +1,9 @@
 # BatteryUpgrade-UserManual
-A guide for the BatteryUpgrade software. This software achieves the impossible, providing backwardscompability for installing newer batteries into older LEAFs. Since not 100% of the communication is known, some bugs still exists, please see the issues page for more info. The latest version of the BatteryUpgrade software is v2.36
+A guide for the BatteryUpgrade software. This software achieves the impossible, providing backwardscompability for installing newer batteries into older LEAFs. Since not 100% of the communication is known, some bugs still exists, please see the issues page for more info. The latest version of the BatteryUpgrade software is v2.38
+
+## Changelog
+v2.36 - Initial release for this repository and all known issues
+v2.38 - SOH is no longer at constant 99% for 2011-2013 battery upgraded vehicles
 
 ## Installation guide
 CAN-bridge installation video (ZE0) https://www.youtube.com/watch?v=-gLMUeE2mXo
