@@ -6,6 +6,11 @@ A guide for the BatteryUpgrade software. This software achieves the impossible, 
 - v2.38 - SOH is no longer at constant 99% for 2011-2013 battery upgraded vehicles
 - v2.40 - The instrumentation cluster now shows correct minutes remaining for time to charge to 100/80% ( Issue #10 )
 - v2.41 - Adds a new charge power selection to RapidgateDodger, 25kW@FAN7
+- v2.42 - Internal improvements, rewrite of functions
+- v2.43 - AZE0: The instrumentation cluster now shows correct minutes remaining for time to charge to 100/80% ( Issue #10 )
+- v2.44 - ZE0: Block sending 0x5BF towards battery (Saves CPU and bus load, newer batteries should not recieve this ZE0 data)
+- v2.45 - Rewrite thermal management to be more in line with 2018+ models. When the battery is cold the regen/motor output is more limited compared to previous versions, thus improving the lifetime of the battery by making it harder to overstress it.
+- v2.46 - Fix ChargeCurrent feature sometimes gets activated by remote heating request. This would show up as chargespeed max 1kW after using remote heating. Now added so if condition is held for more than 16s it reverts to full power.
 
 ## Installation guide
 CAN-bridge step-by-step installation video (ZE0) https://www.youtube.com/watch?v=-gLMUeE2mXo
