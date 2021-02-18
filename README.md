@@ -24,6 +24,7 @@ AZE0 battery into ZE0 example video https://www.youtube.com/watch?v=1Dwsk9lnr6I
 See this video for detailed steps https://www.youtube.com/watch?v=eLcNSo2Vn6U
 
 # Frequently asked questions
+ - After CAN-bridge is installed, any 2014+ 24/30/40/62kWh battery can be installed
  - The BatteryUpgrade software contains some extra features (BatterySaver,RapidgateDodger etc.), see this page for description of these features: https://github.com/dalathegreat/LeafEnhancer-UserManual
  - Leafspy should not be used while vehicle is charging, since the CAN-bridge needs to do extra battery-polling while vehicle is charging. Also Leafspy will show wrong data while charging, see Issue #8
  - AZE0 , The instrumentation state of charge % will show the true battery % after vehicle is upgraded (same as Leafspy shows). This is useful since it is more precise on lower SOC values, and helps you stay confident when taking the vehicle close to empty. Due to this reason, the vehicle will also show somewhere between 94-98% when fully charged, instead of 100%. This is completely normal.
