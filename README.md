@@ -14,7 +14,9 @@ A guide for the BatteryUpgrade software. This software achieves the impossible, 
 - v2.47 - Add new SOC% dash feature for ZE0 users. How to use it: https://www.youtube.com/watch?v=LuiKp4wjlpQ
 
 ## Installation guide
-CAN-bridge step-by-step installation video (ZE0) https://www.youtube.com/watch?v=-gLMUeE2mXo
+CAN-bridge step-by-step installation video:
+ZE0 https://www.youtube.com/watch?v=-gLMUeE2mXo
+AZE0 https://www.youtube.com/watch?v=Iq4NsAjvCn0 (Thanks Gelisob!)
 
 AZE0 battery into ZE0 example video https://www.youtube.com/watch?v=1Dwsk9lnr6I
 
