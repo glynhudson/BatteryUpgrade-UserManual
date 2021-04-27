@@ -15,10 +15,15 @@ A guide for the BatteryUpgrade software. This software achieves the impossible, 
 
 ## Installation guide
 CAN-bridge step-by-step installation video:
+
 ZE0 https://www.youtube.com/watch?v=-gLMUeE2mXo
+
 AZE0 https://www.youtube.com/watch?v=Iq4NsAjvCn0 (Thanks Gelisob!)
 
-AZE0 battery into ZE0 example video https://www.youtube.com/watch?v=1Dwsk9lnr6I
+
+Battery install guide:
+
+ZE0 https://www.youtube.com/watch?v=1Dwsk9lnr6I
 
  - The CAN-bridge needs a constant +12V supply, it is always on and ready to translate the communication between battery and vehicle. If you connect it to switched 12V, it will not wake up fast enough, and miss important messages causing vehicle to not start
 
