@@ -25,6 +25,8 @@ Battery install guide:
 
 ZE0 https://www.youtube.com/watch?v=1Dwsk9lnr6I
 
+e-NV200 https://youtu.be/RmzlNWBnZGQ (Glyn Hudson) 
+
  - The CAN-bridge needs a constant +12V supply, it is always on and ready to translate the communication between battery and vehicle. If you connect it to switched 12V, it will not wake up fast enough, and miss important messages causing vehicle to not start
 
 ## Firmware update guide
