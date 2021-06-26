@@ -20,6 +20,8 @@ ZE0 https://www.youtube.com/watch?v=-gLMUeE2mXo
 
 AZE0 https://www.youtube.com/watch?v=Iq4NsAjvCn0 (Thanks Gelisob!)
 
+e-NV200 https://youtu.be/OxF6pKY6dgw (Thanks Glyn Hudson!)
+
 
 Battery install guide:
 
