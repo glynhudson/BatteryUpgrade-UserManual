@@ -1,18 +1,6 @@
 # BatteryUpgrade-UserManual
 A guide for the BatteryUpgrade software. This software achieves the impossible, providing backwardscompability for installing newer batteries into older LEAFs. Since not 100% of the communication is known, some bugs still exists, please see the issues page for more info. The latest version of the BatteryUpgrade software is v2.41
 
-## Changelog
-- v2.36 - Initial release for this repository and all known issues. Lots of bugs have been fixed in the 50+ versions before this :) 
-- v2.38 - SOH is no longer at constant 99% for 2011-2013 battery upgraded vehicles
-- v2.40 - The instrumentation cluster now shows correct minutes remaining for time to charge to 100/80% ( Issue #10 )
-- v2.41 - Adds a new charge power selection to RapidgateDodger, 25kW@FAN7
-- v2.42 - Internal improvements, rewrite of functions
-- v2.43 - AZE0: The instrumentation cluster now shows correct minutes remaining for time to charge to 100/80% ( Issue #10 )
-- v2.44 - ZE0: Block sending 0x5BF towards battery (Saves CPU and bus load, newer batteries should not recieve this ZE0 data)
-- v2.45 - Rewrite thermal management to be more in line with 2018+ models. When the battery is cold the regen/motor output is more limited compared to previous versions, thus improving the lifetime of the battery by making it harder to overstress it.
-- v2.46 - Fix ChargeCurrent feature sometimes gets activated by remote heating request. This would show up as chargespeed max 1kW after using remote heating. Now added so if condition is held for more than 16s it reverts to full power.
-- v2.47 - Add new SOC% dash feature for ZE0 users. How to use it: https://www.youtube.com/watch?v=LuiKp4wjlpQ
-
 ## Installation guide
 CAN-bridge step-by-step installation video:
 
@@ -41,3 +29,21 @@ See this video for detailed steps https://www.youtube.com/watch?v=eLcNSo2Vn6U
  - ZE0, The vehicle needs to be fully charged after the battery upgrade is completed, in order for the instrumentation to sync how full 12/12bars should be. If you start to drive it right after the upgrade, it will decrement the bars incorrectly. Simply charging it will resolve the situation, and bars will work like they should.
  - AZE0 , The instrumentation state of charge % will show the true battery % after vehicle is upgraded (same as Leafspy shows). This is useful since it is more precise on lower SOC values, and helps you stay confident when taking the vehicle close to empty. Due to this reason, the vehicle will also show somewhere between 94-98% when fully charged, instead of 100%. This is completely normal.
  - Q: Help, my new battery is throwing isolation error codes at fastchargers! A: Most likely moisture has gotten inside the battery, this is typical on salvage batteries that have been left outside/pressure washed. Solution is to open up the battery and do a visual inspection.
+
+## Changelog
+- v2.36 - Initial release for this repository and all known issues. Lots of bugs have been fixed in the 50+ versions before this :) 
+- v2.38 - SOH is no longer at constant 99% for 2011-2013 battery upgraded vehicles
+- v2.40 - The instrumentation cluster now shows correct minutes remaining for time to charge to 100/80% ( Issue #10 )
+- v2.41 - Adds a new charge power selection to RapidgateDodger, 25kW@FAN7
+- v2.42 - Internal improvements, rewrite of functions
+- v2.43 - AZE0: The instrumentation cluster now shows correct minutes remaining for time to charge to 100/80% ( Issue #10 )
+- v2.44 - ZE0: Block sending 0x5BF towards battery (Saves CPU and bus load, newer batteries should not recieve this ZE0 data)
+- v2.45 - Rewrite thermal management to be more in line with 2018+ models. When the battery is cold the regen/motor output is more limited compared to previous versions, thus improving the lifetime of the battery by making it harder to overstress it.
+- v2.46 - Fix ChargeCurrent feature sometimes gets activated by remote heating request. This would show up as chargespeed max 1kW after using remote heating. Now added so if condition is held for more than 16s it reverts to full power.
+- v2.47 - Add new SOC% dash feature for ZE0 users. How to use it: https://www.youtube.com/watch?v=LuiKp4wjlpQ
+- v2.48 - Internal performance improvements (helps on 2018+ vehicles with high bus load)
+- v2.49 - Now requires vehicle to be in Parked shifter state for setting BatterySaver. This stops AUTO HVAC settings from accidentally setting BatterySaver while driving.
+- v2.50 - BatterySaver no longer causes capacity bars to jump/disappear when setting it on ZE0
+- v2.51 - Minor QC tweaks for AZE0
+- v2.52 - BatterySaver reduced to 3 option (83/92/100%) This reduces the chance that someone sets it to 50% chargemax accidentally and causes frustration !
+- v2.53 - QC handling rewritten to fix SOC% display on QC stations for AZE0 ( Issue #11 )
